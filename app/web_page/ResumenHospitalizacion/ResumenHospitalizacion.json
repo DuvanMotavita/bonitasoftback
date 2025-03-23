@@ -1,0 +1,46 @@
+{
+  "id" : "ResumenHospitalizacion",
+  "name" : "ResumenHospitalizacion",
+  "type" : "form",
+  "uuid" : "dd7483a0-5a97-4c7b-b642-3ad8734b323f",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1741117238138,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "0d04ad48-45b7-4bb0-866c-4bb76d69ac9c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ]
+  ],
+  "variables" : { },
+  "assets" : [
+    {
+      "id" : "153371ca-f393-4d32-a488-7165e2a1d6e2",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a851a438-457f-4eff-b8e8-2776780e77c0",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

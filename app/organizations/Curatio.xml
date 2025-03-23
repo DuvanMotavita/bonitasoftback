@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Paciente">
+      <firstName>Paciente</firstName>
+      <lastName></lastName>
+      <title>Mr</title>
+      <jobTitle>Human resources benefits</jobTitle>
+      <manager>helen.kelly</manager>
+      <personalData/>
+      <professionalData>
+        <email>walter.bates@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="Medico">
+      <firstName>MedicoUrgencias</firstName>
+      <lastName></lastName>
+      <title>Mr</title>
+      <jobTitle>Financial controller</jobTitle>
+      <manager>zachary.williamson</manager>
+      <personalData/>
+      <professionalData>
+        <email>patrick.gardenier@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="Laboratorista">
+      <firstName>Laboratorista</firstName>
+      <lastName></lastName>
+      <title>Mrs</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <personalData/>
+      <professionalData>
+        <email>misa.kumagai@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="Hospitalario">
+      <firstName>Hospitalario</firstName>
+      <lastName></lastName>
+      <title>Mr</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <personalData/>
+      <professionalData>
+        <email>norio.yamazaki@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="Asegurador">
+      <firstName>Asegurador</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Paciente">
+      <displayName>Paciente</displayName>
+    </role>
+    <role name="Medico">
+      <displayName>Medico</displayName>
+    </role>
+    <role name="Hospitalario">
+      <displayName>Hospitalario</displayName>
+    </role>
+    <role name="Laboratorista">
+      <displayName>Laboratorista</displayName>
+    </role>
+    <role name="Asegurador">
+      <displayName>Asegurador</displayName>
+    </role>
+    <role name="Member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Hospitalizacion">
+      <displayName>Hospitalizacion</displayName>
+    </group>
+    <group name="Laboratorio">
+      <displayName>Laboratorio</displayName>
+    </group>
+    <group name="Aseguradora">
+      <displayName>Aseguradora</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Paciente</userName>
+      <roleName>Paciente</roleName>
+      <groupName>Hospitalizacion</groupName>
+    </membership>
+    <membership>
+      <userName>Medico</userName>
+      <roleName>Medico</roleName>
+      <groupName>Hospitalizacion</groupName>
+    </membership>
+    <membership>
+      <userName>Laboratorista</userName>
+      <roleName>Laboratorista</roleName>
+      <groupName>Laboratorio</groupName>
+    </membership>
+    <membership>
+      <userName>Hospitalario</userName>
+      <roleName>Hospitalario</roleName>
+      <groupName>Hospitalizacion</groupName>
+    </membership>
+    <membership>
+      <userName>Asegurador</userName>
+      <roleName>Asegurador</roleName>
+      <groupName>Aseguradora</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

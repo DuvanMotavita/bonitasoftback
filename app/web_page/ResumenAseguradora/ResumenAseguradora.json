@@ -1,0 +1,46 @@
+{
+  "id" : "ResumenAseguradora",
+  "name" : "ResumenAseguradora",
+  "type" : "form",
+  "uuid" : "1c536f6b-8b5f-4d37-8338-6a3391405da0",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1741186454731,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "449c79fd-e40e-4ff8-9958-e9ad028ccf8c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ]
+  ],
+  "variables" : { },
+  "assets" : [
+    {
+      "id" : "66655213-14e0-44e1-9274-23bd4138af85",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "38619640-eefd-44c6-87c0-f9946e882b03",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
