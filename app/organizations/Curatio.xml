@@ -113,6 +113,12 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="Cirujano">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Paciente">
@@ -133,6 +139,9 @@
     <role name="Member">
       <displayName>Member</displayName>
     </role>
+    <role name="Cirujano">
+      <displayName>Cirujano</displayName>
+    </role>
   </roles>
   <groups>
     <group name="Hospitalizacion">
@@ -143,6 +152,9 @@
     </group>
     <group name="Aseguradora">
       <displayName>Aseguradora</displayName>
+    </group>
+    <group name="Cirugia">
+      <displayName>Cirugia</displayName>
     </group>
   </groups>
   <memberships>
@@ -170,6 +182,11 @@
       <userName>Asegurador</userName>
       <roleName>Asegurador</roleName>
       <groupName>Aseguradora</groupName>
+    </membership>
+    <membership>
+      <userName>Cirujano</userName>
+      <roleName>Cirujano</roleName>
+      <groupName>Cirugia</groupName>
     </membership>
   </memberships>
 </organization:Organization>
