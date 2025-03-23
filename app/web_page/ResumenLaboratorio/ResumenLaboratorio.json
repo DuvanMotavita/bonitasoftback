@@ -1,0 +1,46 @@
+{
+  "id" : "ResumenLaboratorio",
+  "name" : "ResumenLaboratorio",
+  "type" : "form",
+  "uuid" : "1ad2d509-2a55-48c5-a712-acafb4b4fdfc",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1741193043878,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "101e119b-3798-42b9-b143-0ba7fc19226c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ]
+  ],
+  "variables" : { },
+  "assets" : [
+    {
+      "id" : "cec0c3d9-508c-47e4-89ae-9b4a00d6e673",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "c761117b-d53d-4a1c-b0a2-6df3dbd102d6",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

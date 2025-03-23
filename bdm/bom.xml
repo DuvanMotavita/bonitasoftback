@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.AnalizarMuestras">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombre" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="consistencia" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Clasificacion">
+            <fields>
+                <field type="INTEGER" length="255" name="clasificacionId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clasificacionNombre" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ClasificarPaciente">
+            <fields>
+                <field type="INTEGER" length="255" name="pacienteId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="pacienteNombre" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="pacienteClasificacion" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.EvaluarPaciente">
+            <fields>
+                <field type="STRING" length="255" name="sintomas" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="descripcion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="enfermedadSospecha" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="medicamentos" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ExaminarMuestras">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreMuestra" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="consistencia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreProcedimiento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="resultados" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.PacienteAsegurado">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="patient" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="city" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="birthDate" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SolicitudPaciente">
+            <fields>
+                <field type="STRING" length="255" name="typeId" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="numberId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Tratamiento">
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreTratamiento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="numeroDias" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="resultadoFinal" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
