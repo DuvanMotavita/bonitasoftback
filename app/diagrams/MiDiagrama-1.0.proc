@@ -1681,7 +1681,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_5CfgAgeXEfCIDsDob5_nSQ" type="5075">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_5CfgAweXEfCIDsDob5_nSQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5CfgAQeXEfCIDsDob5_nSQ" x="344" y="194"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5CfgAQeXEfCIDsDob5_nSQ" x="302" y="194"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_HRR58AeYEfCIDsDob5_nSQ" type="3006" element="_HRQr0AeYEfCIDsDob5_nSQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_HRR58geYEfCIDsDob5_nSQ" type="5006"/>
