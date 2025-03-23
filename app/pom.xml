@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.company</groupId>
-    <artifactId>hospitalcuratio-parent</artifactId>
+    <artifactId>hospitalcuratio0-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>hospitalcuratio</artifactId>
+  <artifactId>hospitalcuratio0</artifactId>
   <name>HospitalCuratio</name>
   <dependencies>
     <dependency>
@@ -76,7 +76,7 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>hospitalcuratio-bdm-model</artifactId>
+      <artifactId>hospitalcuratio0-bdm-model</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
