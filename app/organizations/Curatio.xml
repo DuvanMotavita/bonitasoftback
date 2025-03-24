@@ -119,13 +119,31 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="Radiologo">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Enfermera">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Admision">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Paciente">
       <displayName>Paciente</displayName>
     </role>
-    <role name="Medico">
-      <displayName>Medico</displayName>
+    <role name="Medico Urgencias">
+      <displayName>Medico Urgencias</displayName>
     </role>
     <role name="Hospitalario">
       <displayName>Hospitalario</displayName>
@@ -142,6 +160,15 @@
     <role name="Cirujano">
       <displayName>Cirujano</displayName>
     </role>
+    <role name="Radiologo">
+      <displayName>Radiologo</displayName>
+    </role>
+    <role name="Enfermera">
+      <displayName>Enfermera</displayName>
+    </role>
+    <role name="Admision">
+      <displayName>Admision</displayName>
+    </role>
   </roles>
   <groups>
     <group name="Hospitalizacion">
@@ -156,6 +183,18 @@
     <group name="Cirugia">
       <displayName>Cirugia</displayName>
     </group>
+    <group name="Admisiones" parentPath="/Hospitalizacion">
+      <displayName>Admisiones</displayName>
+    </group>
+    <group name="Enfermeria" parentPath="/Hospitalizacion">
+      <displayName>Enfermeria</displayName>
+    </group>
+    <group name="Radiologia">
+      <displayName>Radiologia</displayName>
+    </group>
+    <group name="Medico" parentPath="/Hospitalizacion">
+      <displayName>Medico</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -165,7 +204,7 @@
     </membership>
     <membership>
       <userName>Medico</userName>
-      <roleName>Medico</roleName>
+      <roleName>Medico Urgencias</roleName>
       <groupName>Hospitalizacion</groupName>
     </membership>
     <membership>
@@ -187,6 +226,23 @@
       <userName>Cirujano</userName>
       <roleName>Cirujano</roleName>
       <groupName>Cirugia</groupName>
+    </membership>
+    <membership>
+      <userName>Radiologo</userName>
+      <roleName>Radiologo</roleName>
+      <groupName>Radiologia</groupName>
+    </membership>
+    <membership>
+      <userName>Enfermera</userName>
+      <roleName>Enfermera</roleName>
+      <groupName>Enfermeria</groupName>
+      <groupParentPath>/Hospitalizacion</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Admision</userName>
+      <roleName>Admision</roleName>
+      <groupName>Admisiones</groupName>
+      <groupParentPath>/Hospitalizacion</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
