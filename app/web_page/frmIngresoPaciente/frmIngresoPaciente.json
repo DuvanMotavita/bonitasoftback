@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "0c08669d-728d-4728-8d0f-6ef03ca0ff47",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1742780724638,
+  "lastUpdate" : 1743286045106,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -182,7 +182,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 4,
+                        "md" : 3,
                         "sm" : 12,
                         "xs" : 12,
                         "lg" : 12
@@ -217,7 +217,8 @@
                           "value" : "Número Documento"
                         },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "Ingrese número documento"
                         },
                         "type" : {
                           "type" : "constant",
@@ -241,21 +242,23 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 3
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 15
                         },
                         "debounce" : {
                           "type" : "constant",
                           "value" : 0
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 0
                         },
                         "max" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 2147483647
                         },
                         "step" : {
                           "type" : "constant",
