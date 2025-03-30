@@ -201,15 +201,15 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_KW71KwzvEfCrlrojk3TH7Q">
                   <expressions xmi:type="expression:ListExpression" xmi:id="_KW71LAzvEfCrlrojk3TH7Q">
                     <expressions xmi:type="expression:Expression" xmi:id="_KW71LQzvEfCrlrojk3TH7Q" name="Authorization" content="Authorization"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_KW71LgzvEfCrlrojk3TH7Q" name="newScript()" content="return 'Bearer ' + tokenSalesForce" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                      <referencedElements xmi:type="process:Data" xmi:id="_KW71LwzvEfCrlrojk3TH7Q" name="tokenSalesForce" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_KW71LgzvEfCrlrojk3TH7Q" name="newScript()" content="'Bearer ' + tokenSalesForce" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                      <referencedElements xmi:type="process:Data" xmi:id="_wlxOEAz3EfCrlrojk3TH7Q" name="tokenSalesForce" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
                     </expressions>
                   </expressions>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_KW71MAzvEfCrlrojk3TH7Q" key="body">
-                <expression xmi:type="expression:Expression" xmi:id="_KW71MQzvEfCrlrojk3TH7Q" name="body()" content="return '{&quot;Phone&quot;: &quot;' + historiaClinica.intCelular + '&quot;, &quot;documento__c&quot;: &quot;' + historiaClinica.intNumeroDocumento + '&quot;, &quot;email__c&quot;: &quot;' + historiaClinica.strEmail + '&quot;, &quot;Name&quot;: &quot;' + historiaClinica.strNombreApellido + '&quot;, &quot;tipodoc__c&quot;: &quot;' + historiaClinica.strTipoDocumento + '&quot;}'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_inrfYAzzEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                <expression xmi:type="expression:Expression" xmi:id="_KW71MQzvEfCrlrojk3TH7Q" name="body()" content="'{&quot;Phone&quot;: &quot;' + historiaClinica.intCelular + '&quot;, &quot;documento__c&quot;: &quot;' + historiaClinica.intNumeroDocumento + '&quot;, &quot;email__c&quot;: &quot;' + historiaClinica.strEmail + '&quot;, &quot;Name&quot;: &quot;' + historiaClinica.strNombreApellido + '&quot;, &quot;tipodoc__c&quot;: &quot;' + historiaClinica.strTipoDocumento + '&quot;}'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wlxOEQz3EfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_KW71MgzvEfCrlrojk3TH7Q" key="do_not_follow_redirect">
@@ -2540,7 +2540,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_YjrFMQhQEfCLSa6nOFOQwg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_6gvlcAhBEfCLSa6nOFOQwg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_kbb8AAzzEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Lxb1gAz1EfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_6gvlcghBEfCLSa6nOFOQwg">
         <targetForm xmi:type="expression:Expression" xmi:id="_6gvlcwhBEfCLSa6nOFOQwg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
