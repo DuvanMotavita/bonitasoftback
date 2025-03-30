@@ -1,10 +1,10 @@
 {
-  "id" : "frmRealizaTriage",
-  "name" : "frmRealizaTriage",
+  "id" : "frmImagenesDx",
+  "name" : "frmImagenesDx",
   "type" : "form",
-  "uuid" : "914fe00c-e60a-41fb-8e70-1f005caca0c9",
+  "uuid" : "7bd16e81-247d-4e0c-9938-1b56a0e71926",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1743349894156,
+  "lastUpdate" : 1743355556888,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "f46b877c-b95d-4dae-8238-fda39695c68c",
+        "reference" : "f91df6ce-c372-4da0-bcc2-70a07555c41d",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a993d27a-2b3e-4e3a-bd7d-c6096fff3e15",
+              "reference" : "19278417-df97-4a51-9a8c-f437b31e9a9e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "e2ff970d-dacc-4b26-8b16-5bf39e71813b",
+              "reference" : "67bd4800-f055-4228-948a-86413f97f84b",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8d041ff6-2d6d-469b-8c40-a1ffdce88b99",
+        "reference" : "0a770195-5172-4148-9690-866304cdae9a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "aad92ffb-87df-4ac6-8313-fc25395bfaa0",
+          "reference" : "3581d009-d9bc-48fa-ad40-a8b1fb1b8a40",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "45097143-f9ef-41ed-9030-61c47434e2aa",
+                "reference" : "99401aa4-54c3-4dc8-83ff-e9fcde8738bf",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a68a864d-3392-4677-97cb-9c718ae3600e",
+                "reference" : "ba0f7806-9be2-4a39-86f7-bcf79be2d0fd",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -205,7 +205,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
                         "lg" : 12
@@ -256,7 +256,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "cb425d59-8137-43e8-a6ad-8c4592f56b19",
+                      "reference" : "74b079bd-a763-4f6c-b5d9-5ca5242e8ad4",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -317,7 +317,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "6db868cf-e3d3-4914-a038-5e3d579fdbb8",
+                      "reference" : "311607f8-d8b1-4b30-b276-b1bc708bee33",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -349,7 +349,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre Apellido"
+                          "value" : "Nombre y Apellido"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -376,7 +376,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "ebc2d905-86a2-4887-8341-dd94f1a4694d",
+                      "reference" : "12b57000-0d5b-4048-8cb4-048ed21b378f",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -386,10 +386,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 7,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 3
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -437,7 +437,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "0efa6da0-9a51-4f28-b25a-92d184a7cce6",
+                      "reference" : "16259fb6-f81d-4b38-91a3-e4ce3872b9bd",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -448,7 +448,7 @@
                         "md" : 2,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 3
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "allowHtml" : {
@@ -496,7 +496,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "b8dc601e-6896-4655-bf2e-5cd7045c56c2",
+                      "reference" : "f48db4d7-9ed5-4454-b7f7-57eb753a2827",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -504,129 +504,47 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 2,
+                        "md" : 3,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 3
+                        "lg" : 4
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!historiaClinica.strPrestadorSalud"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Edad"
+                          "value" : "Prestador de salud"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{historiaClinica.strPrestadorSalud}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.intEdad"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "max" : {
-                          "type" : "constant",
-                          "value" : 99
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "f5538c7c-3f4a-4f5d-9894-e9d10dfaaeee",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 2,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 3
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Triage"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -634,82 +552,60 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Seleccione"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.intTriage"
+                          "value" : 4
                         }
                       },
-                      "reference" : "52e0aae4-28f7-43d4-bda2-d69862a2ae85",
+                      "reference" : "2fd83afc-1c29-4dd3-aa3d-e38503d9f344",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbText",
+                      "description" : ""
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "allowHtml" : {
                           "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "expression"
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!historiaClinica.strImagenesDx"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Signos Vitales"
+                          "value" : "Imágenes diagnósticos solicitados"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{historiaClinica.strImagenesDx}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -717,24 +613,23 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.strSignosVitales"
+                          "value" : 4
                         }
                       },
-                      "reference" : "3c27c9d4-477e-4dfe-a756-1ea8c058e9c1",
+                      "reference" : "db246475-2db8-408c-9189-36f582f446c5",
                       "hasValidationError" : false,
-                      "id" : "pbTextarea"
-                    },
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -771,7 +666,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Motivo Consulta"
+                          "value" : "Resultados de los examenes"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -783,10 +678,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "historiaClinica.strMotivoConsulta"
+                          "value" : "historiaClinica.strResultadosDx"
                         }
                       },
-                      "reference" : "3b7f2392-47e5-45b8-bdc2-bb2513c6dc34",
+                      "reference" : "df1da327-dc1f-4f9f-b7e4-c40b153b4f90",
                       "hasValidationError" : false,
                       "id" : "pbTextarea"
                     }
@@ -867,30 +762,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "69262c4c-f04f-438c-8bb0-c5b3a2d4c63f",
+                "reference" : "d90e2e7f-fd7b-49a9-9dd0-aa61e708b1f0",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -942,7 +816,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d75ae0a0-1abb-490e-8bfc-74fc487a7bd1",
+                "reference" : "184a5cdf-3c51-4840-ba22-1e1b7a1a586c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -990,10 +864,7 @@
         "\treturn {",
         "\t\t//map historiaClinica variable to expected task contract input",
         "\t\thistoriaClinicaInput: {",
-        "\t\t\tstrMotivoConsulta: $data.historiaClinica.strMotivoConsulta !== undefined ? $data.historiaClinica.strMotivoConsulta : null,",
-        "\t\t\tintTriage: $data.historiaClinica.intTriage !== undefined ? $data.historiaClinica.intTriage : null,",
-        "\t\t\tstrSignosVitales: $data.historiaClinica.strSignosVitales !== undefined ? $data.historiaClinica.strSignosVitales : null,",
-        "\t\t\tintEdad: $data.historiaClinica.intEdad !== undefined ? $data.historiaClinica.intEdad : null",
+        "\t\t\tstrResultadosDx: $data.historiaClinica.strResultadosDx !== undefined ? $data.historiaClinica.strResultadosDx : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1017,16 +888,16 @@
   },
   "assets" : [
     {
-      "id" : "bfb257be-0ace-4de3-9c34-373955d78634",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "dc8654e8-6bde-4a48-b07e-694d0270a10b",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "9655fe26-26f8-46b7-a6ad-796b6698343f",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "014db93e-df10-4467-803e-cd9803d6ea10",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }

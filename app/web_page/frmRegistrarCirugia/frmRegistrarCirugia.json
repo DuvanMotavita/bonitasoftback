@@ -1,10 +1,10 @@
 {
-  "id" : "frmTriage",
-  "name" : "frmTriage",
+  "id" : "frmRegistrarCirugia",
+  "name" : "frmRegistrarCirugia",
   "type" : "form",
-  "uuid" : "965bbdb2-83f0-4e8d-99fe-6923572b6dc6",
+  "uuid" : "c4215de1-6f76-4815-8e54-0e898898dda5",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1743268723018,
+  "lastUpdate" : 1743358345138,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "0516de0c-0a97-450f-813b-476eb18e0819",
+        "reference" : "e30d914f-084b-46a9-9f28-02a95dfe9295",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "1379f264-5d68-4f31-888b-933ae3376928",
+              "reference" : "a745b894-69fb-42c4-b73b-97ee8f83db56",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "54f74601-88fb-45f0-86bd-60bf4b63e324",
+              "reference" : "5e80b671-fb45-45cd-94c5-d1d723dd0433",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "13501107-37ec-4488-9041-0fb601b46dd4",
+        "reference" : "f92bca83-d2fb-4004-9214-d975beeeed2a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a6f440c6-c435-4483-b150-d7194ce85bb8",
+          "reference" : "1e58a72a-58e1-461c-ba1e-f5005ebbe419",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Historia Clinica"
+                    "value" : "Registrar Cirugia"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a450435d-fac7-4806-9964-b49407670fef",
+                "reference" : "e0a4f926-c1ac-4325-b515-d787b6caf986",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "aaa20ac4-73cb-4d21-b008-5d322ec0e68d",
+                "reference" : "6e3acd7b-74a8-4af8-8ef5-c04450abd32c",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -237,7 +237,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo Documento"
+                          "value" : "Id"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -252,11 +252,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "historiaClinica.strTipoDocumento"
+                          "value" : "registrarCirugia.id"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -285,7 +285,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "b6fba337-1644-4a22-86cf-11f2043f8248",
+                      "reference" : "636d7361-b344-456f-a1e5-adbe055b88db",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -299,84 +299,65 @@
                         "lg" : 4
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Numero Documento"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.intNumeroDocumento"
-                        },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "maxLength" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha Cirugia"
+                        },
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
+                        "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "registrarCirugia.fechaCirugia"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
                         }
                       },
-                      "reference" : "fd2e9576-71e5-420c-9931-7815b13a15ca",
+                      "reference" : "019708bd-41f2-445b-a88d-d6fa2eaea2b0",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbDatePicker"
                     },
                     {
                       "type" : "component",
@@ -413,7 +394,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre Apellido"
+                          "value" : "Nombre Cirujano"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -428,7 +409,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "historiaClinica.strNombreApellido"
+                          "value" : "registrarCirugia.nombreCirujano"
                         },
                         "required" : {
                           "type" : "constant",
@@ -461,7 +442,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "d7d139b7-bb1e-4e0e-aa32-51271025bb60",
+                      "reference" : "8d5728b4-ac9f-4302-bcd9-8a317f16bc14",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -471,10 +452,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 2,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -503,169 +484,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Edad"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.intEdad"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "f314210f-f1e1-4034-a7d2-bed32860d849",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 2,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Clasificacion Triage"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Seleccione"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "historiaClinica.intTriage"
-                        }
-                      },
-                      "reference" : "4d3d18e0-27a6-40e1-9897-baeb2a8f4cf5",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 8,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Signos Vitales"
+                          "value" : "Cedula Paciente"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -680,7 +499,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "historiaClinica.strSignosVitales"
+                          "value" : "registrarCirugia.cedulaPaciente"
                         },
                         "required" : {
                           "type" : "constant",
@@ -713,7 +532,95 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "e9ed06c2-0cf8-4458-b337-bee1fd3496dc",
+                      "reference" : "c0efe90d-70bf-4a4d-a08a-1e1b259175c2",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 8,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nombre Cirugia"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "registrarCirugia.nombreCirugia"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "9dbcc9ba-ce3e-4fa8-9a2a-d3bcf64e8243",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -763,7 +670,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Motivo Consulta"
+                          "value" : "Resultado Cirugia"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -775,10 +682,74 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "historiaClinica.strMotivoConsulta"
+                          "value" : "registrarCirugia.resultadoCirugia"
                         }
                       },
-                      "reference" : "4df900bd-1944-4753-b46d-c801cb18d183",
+                      "reference" : "db8a874b-5c2d-4582-9c53-b5dce6a45246",
+                      "hasValidationError" : false,
+                      "id" : "pbTextarea"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Resumen cirugía"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "historiaClinica.strResultadoCirugia"
+                        }
+                      },
+                      "reference" : "53a5a835-ad9e-44d4-b22a-849a54339cbe",
                       "hasValidationError" : false,
                       "id" : "pbTextarea"
                     }
@@ -861,7 +832,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "93a43a51-f021-4e9c-aac3-7c548fe09b64",
+                "reference" : "c464488b-5af1-4cea-b9da-e57c9b318959",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -913,7 +884,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "27e686f9-f76e-4268-938e-8254af9b0e5c",
+                "reference" : "82495943-c1eb-4ee3-8db3-6ca6e8346f58",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -929,13 +900,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "historiaClinica" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.historiaClinica_ref.link}}"
       ],
       "exposed" : false
     },
@@ -957,17 +921,16 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.historiaClinica ){",
+        "if( $data.registrarCirugia ){",
         "\treturn {",
-        "\t\t//map historiaClinica variable to expected task contract input",
-        "\t\thistoriaClinicaInput: {",
-        "\t\t\tstrTipoDocumento: $data.historiaClinica.strTipoDocumento !== undefined ? $data.historiaClinica.strTipoDocumento : null,",
-        "\t\t\tintNumeroDocumento: $data.historiaClinica.intNumeroDocumento !== undefined ? $data.historiaClinica.intNumeroDocumento : null,",
-        "\t\t\tstrNombreApellido: $data.historiaClinica.strNombreApellido !== undefined ? $data.historiaClinica.strNombreApellido : null,",
-        "\t\t\tstrMotivoConsulta: $data.historiaClinica.strMotivoConsulta !== undefined ? $data.historiaClinica.strMotivoConsulta : null,",
-        "\t\t\tintTriage: $data.historiaClinica.intTriage !== undefined ? $data.historiaClinica.intTriage : null,",
-        "\t\t\tstrSignosVitales: $data.historiaClinica.strSignosVitales !== undefined ? $data.historiaClinica.strSignosVitales : null,",
-        "\t\t\tintEdad: $data.historiaClinica.intEdad !== undefined ? $data.historiaClinica.intEdad : null",
+        "\t\t//map registrarCirugia variable to expected task contract input",
+        "\t\tregistrarCirugiaInput: {",
+        "\t\t\tid: $data.registrarCirugia.id !== undefined ? $data.registrarCirugia.id : null,",
+        "\t\t\tnombreCirujano: $data.registrarCirugia.nombreCirujano !== undefined ? $data.registrarCirugia.nombreCirujano : null,",
+        "\t\t\tcedulaPaciente: $data.registrarCirugia.cedulaPaciente !== undefined ? $data.registrarCirugia.cedulaPaciente : null,",
+        "\t\t\tnombreCirugia: $data.registrarCirugia.nombreCirugia !== undefined ? $data.registrarCirugia.nombreCirugia : null,",
+        "\t\t\tresultadoCirugia: $data.registrarCirugia.resultadoCirugia !== undefined ? $data.registrarCirugia.resultadoCirugia : null,",
+        "\t\t\tfechaCirugia: $data.registrarCirugia.fechaCirugia !== undefined ? $data.registrarCirugia.fechaCirugia : null",
         "\t\t}",
         "\t}",
         "}"
@@ -981,24 +944,45 @@
       ],
       "exposed" : false
     },
+    "registrarCirugia" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.registrarCirugia_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
         "id"
       ],
       "exposed" : false
+    },
+    "historiaClinica" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByStrResultadoCirugia [com.company.model.HistoriaClinica]\",\"businessObjectName\":\"HistoriaClinica\",\"query\":{\"name\":\"findByStrResultadoCirugia\",\"displayName\":\"findByStrResultadoCirugia\"},\"id\":\"com.company.model.HistoriaClinica\",\"filters\":[{\"name\":\"strResultadoCirugia\",\"type\":\"STRING\",\"collection\":false,\"value\":\"registrarCirugia.resultadoCirugia\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "historiaClinica_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "c563a5e5-5c8b-4ecd-b536-ac4ec77ede21",
+      "id" : "46e81e26-16d6-4346-9114-e5630841a6a8",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "f2809949-1e82-4cc4-85bb-6490f76d08a8",
+      "id" : "034e91f1-eec0-48ec-804f-2f6e7a3e6329",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

@@ -108,6 +108,10 @@
                 <field type="STRING" length="255" name="nombreCirugia" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="resultadoCirugia" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="fechaCirugia" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bAnestecia" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bMedicacion" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bQuirofano" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bConsentimiento" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
