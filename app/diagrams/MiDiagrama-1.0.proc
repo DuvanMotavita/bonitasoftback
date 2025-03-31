@@ -424,11 +424,27 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="__ClBFvkbEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="__ClBGPkbEe-sVKVci2O3GA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="__ClBF_kbEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <inputMappings xmi:type="process:InputMapping" xmi:id="_mvck8A3CEfCrlrojk3TH7Q" subprocessTarget="historiaClinicaInput">
-            <processSource xmi:type="expression:Expression" xmi:id="_mvck8Q3CEfCrlrojk3TH7Q" name="newScript()" content="def historiaClinicaMap = [&#xD;&#xA;&#x9;strTipoDocumento: historiaClinica.strTipoDocumento,&#xD;&#xA;&#x9;intNumeroDocumento: historiaClinica.intNumeroDocumento,&#xD;&#xA;&#x9;strResultadosDx: historiaClinica.strResultadosDx&#xD;&#xA;]&#xD;&#xA;return historiaClinicaMap" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_WrgVUA3EEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_3H578A3UEfCrlrojk3TH7Q" subprocessTarget="intNumDoc">
+            <processSource xmi:type="expression:Expression" xmi:id="_3H578Q3UEfCrlrojk3TH7Q" name="newScript()" content="historiaClinica.intNumeroDocumento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6aZAYA3UEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
             </processSource>
           </inputMappings>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_7Kb9QA3UEfCrlrojk3TH7Q" subprocessTarget="strTipDoc">
+            <processSource xmi:type="expression:Expression" xmi:id="_7Kb9QQ3UEfCrlrojk3TH7Q" name="newScript()" content="historiaClinica.strTipoDocumento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-Q1tgA3UEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </processSource>
+          </inputMappings>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_--sSAA3UEfCrlrojk3TH7Q" subprocessTarget="strExamen">
+            <processSource xmi:type="expression:Expression" xmi:id="_--sSAQ3UEfCrlrojk3TH7Q" name="newScript()" content="historiaClinica.strImagenesDx" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_CqQk0A3VEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </processSource>
+          </inputMappings>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_DchvQA3VEfCrlrojk3TH7Q" subprocessTarget="strResultado">
+            <processSource xmi:type="expression:Expression" xmi:id="_DchvQQ3VEfCrlrojk3TH7Q" name="newScript()" content="historiaClinica.strResultadosDx" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_GlKUIA3VEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </processSource>
+          </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_H44l0A3VEfCrlrojk3TH7Q" subprocessSource="historiaClinica" processTarget="__st24AhIEfCLSa6nOFOQwg"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_d80R8whBEfCLSa6nOFOQwg" name="ImagenesDx" content="ImagenesDx" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_d80R9AhBEfCLSa6nOFOQwg" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -2323,8 +2339,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_8i18ow2-EfCrlrojk3TH7Q" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8i18pA2-EfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_8i18pQ2-EfCrlrojk3TH7Q" name="historiaClinicaInput.strResultadosDx" content="historiaClinicaInput?.strResultadosDx" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_8i18pg2-EfCrlrojk3TH7Q" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_8i18pQ2-EfCrlrojk3TH7Q" name="historiaClinicaInput.strResultadosDx" content="historiaClinica.strResultadosDx" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-WDGAA3GEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_8i18pw2-EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setStrResultadosDx">
               <inputTypes>java.lang.String</inputTypes>
@@ -2338,11 +2354,7 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_s2LpmQ2JEfCrlrojk3TH7Q">
             <targetForm xmi:type="expression:Expression" xmi:id="_iPshIA2LEfCrlrojk3TH7Q" name="frmImagenesDx" content="7bd16e81-247d-4e0c-9938-1b56a0e71926" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_s2LpmA2JEfCrlrojk3TH7Q">
-            <inputs xmi:type="process:ContractInput" xmi:id="_8i18oA2-EfCrlrojk3TH7Q" name="historiaClinicaInput" type="COMPLEX" dataReference="historiaClinica" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_8i18oQ2-EfCrlrojk3TH7Q" name="strResultadosDx" createMode="false"/>
-            </inputs>
-          </contract>
+          <contract xmi:type="process:Contract" xmi:id="_s2LpmA2JEfCrlrojk3TH7Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_s2Lpmw2JEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_0wi4EA2JEfCrlrojk3TH7Q" name="Generar imagen" outgoing="_MHpxxAhCEfCLSa6nOFOQwg" incoming="_2pvOUA2JEfCrlrojk3TH7Q">
@@ -2435,12 +2447,10 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ec6NoQhJEfCLSa6nOFOQwg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_HkQREA2-EfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_lIToBg3CEfCrlrojk3TH7Q" name="initHistoriaClinica()" content="def historiaClinicaVar = new com.company.model.HistoriaClinica()&#xD;&#xA;historiaClinicaVar.strTipoDocumento = historiaClinicaInput?.strTipoDocumento&#xD;&#xA;historiaClinicaVar.intNumeroDocumento = historiaClinicaInput?.intNumeroDocumento&#xD;&#xA;historiaClinicaVar.strResultadosDx = historiaClinicaInput?.strResultadosDx&#xD;&#xA;return historiaClinicaVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.HistoriaClinica">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_lIToBw3CEfCrlrojk3TH7Q" name="historiaClinicaInput" type="COMPLEX"/>
-        </defaultValue>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_lIToBg3CEfCrlrojk3TH7Q" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_6gvlcAhBEfCLSa6nOFOQwg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_3wqDMA3CEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_eU0IsA3HEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_6gvlcghBEfCLSa6nOFOQwg">
         <targetForm xmi:type="expression:Expression" xmi:id="_6gvlcwhBEfCLSa6nOFOQwg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2463,17 +2473,18 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_EjRJ8A2KEfCrlrojk3TH7Q" name="Radiologo" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_6gvldAhBEfCLSa6nOFOQwg">
-        <inputs xmi:type="process:ContractInput" xmi:id="_lIToAA3CEfCrlrojk3TH7Q" name="historiaClinicaInput" type="COMPLEX" dataReference="historiaClinica">
-          <inputs xmi:type="process:ContractInput" xmi:id="_lIToAQ3CEfCrlrojk3TH7Q" name="strTipoDocumento"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_lIToAg3CEfCrlrojk3TH7Q" name="intNumeroDocumento" type="INTEGER"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_lIToAw3CEfCrlrojk3TH7Q" name="strResultadosDx"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_cyIiEA3UEfCrlrojk3TH7Q" name="intNumDoc" type="INTEGER">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_cyIiEQ3UEfCrlrojk3TH7Q"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_lIToBA3CEfCrlrojk3TH7Q" expression="historiaClinicaInput?.strTipoDocumento != null" errorMessage="strTipoDocumento is mandatory for HistoriaClinica" name="mandatory_historiaClinicaInput_strTipoDocumento">
-          <inputNames>historiaClinicaInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_lIToBQ3CEfCrlrojk3TH7Q" expression="historiaClinicaInput?.intNumeroDocumento != null" errorMessage="intNumeroDocumento is mandatory for HistoriaClinica" name="mandatory_historiaClinicaInput_intNumeroDocumento">
-          <inputNames>historiaClinicaInput</inputNames>
-        </constraints>
+        <inputs xmi:type="process:ContractInput" xmi:id="_f4768A3UEfCrlrojk3TH7Q" name="strTipDoc">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_f4768Q3UEfCrlrojk3TH7Q"/>
+        </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_hTRK8A3UEfCrlrojk3TH7Q" name="strExamen">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_hTRK8Q3UEfCrlrojk3TH7Q"/>
+        </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_leVdMA3UEfCrlrojk3TH7Q" name="strResultado">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_leVdMQ3UEfCrlrojk3TH7Q"/>
+        </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_6gtwQAhBEfCLSa6nOFOQwg">
         <name xmi:type="expression:Expression" xmi:id="_6gtwQQhBEfCLSa6nOFOQwg" content="" returnTypeFixed="true"/>
