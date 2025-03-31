@@ -1,10 +1,10 @@
 {
-  "id" : "frmRegistrarCirugia",
-  "name" : "frmRegistrarCirugia",
+  "id" : "frmTomarImagenDx",
+  "name" : "frmTomarImagenDx",
   "type" : "form",
-  "uuid" : "08b7e1b1-08a5-43bb-8791-3da88ecec76d",
+  "uuid" : "aa66922c-3cd1-4a5b-8d19-9d8fe4db7880",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1743402490068,
+  "lastUpdate" : 1743402306604,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "574e32f3-ce3c-4631-916b-02dc39c32ce3",
+        "reference" : "ba18d98e-fc6b-4371-8487-f34b05217a03",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "2c4c1b47-0964-4009-84dc-5699596f015e",
+              "reference" : "5967f945-d365-44dc-8d7c-0ec926a49a61",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4951de97-6027-4138-a576-466685afdcc6",
+              "reference" : "3f4158c0-a68a-4220-9553-a54bf42ad0d2",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "618184f0-0f99-4cfb-9ef5-a2eae5e4e389",
+        "reference" : "f5377b04-bd5d-4ed0-b6a4-d1e41cf6cbe0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "70a6aaba-c740-4146-bbc2-1f970f6e42d8",
+          "reference" : "69f6e2fc-81bf-4088-a33f-00549e9934a7",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -140,48 +140,17 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
                   "readOnly" : {
                     "type" : "constant",
                     "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Resultado Cirugía"
-                  },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.strResultadoCirugia"
                   },
                   "required" : {
                     "type" : "constant",
@@ -199,25 +168,30 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "debounce" : {
+                  "labelHidden" : {
                     "type" : "constant",
-                    "value" : 0
+                    "value" : false
                   },
-                  "min" : {
-                    "type" : "constant"
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Resultado Imagen Diagnostica"
                   },
-                  "max" : {
-                    "type" : "constant"
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
                   },
-                  "step" : {
+                  "labelWidth" : {
                     "type" : "constant",
                     "value" : 1
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.strResultadoImagenDx"
                   }
                 },
-                "reference" : "311be399-fb7d-4ede-8054-3ca91c349083",
+                "reference" : "ea8279cf-86a7-457f-b52a-4243c2185239",
                 "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
+                "id" : "pbTextarea"
               }
             ],
             [
@@ -295,7 +269,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cf1f75d7-50dd-4817-95aa-ea90977aa7e0",
+                "reference" : "1e6ae14d-a46e-4afb-9c73-2f63441f0ced",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -347,7 +321,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e1a96344-5f2f-400c-8f3e-81fa7a6a0d5e",
+                "reference" : "2ecb825e-9882-499c-8c52-fcf0e9420300",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -370,7 +344,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"strResultadoCirugia\" : \"\"\r",
+        "  \"strResultadoImagenDx\" : \"\"\r",
         "}"
       ],
       "exposed" : false
@@ -394,7 +368,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tstrResultadoCirugia: $data.formInput.strResultadoCirugia",
+        "\tstrResultadoImagenDx: $data.formInput.strResultadoImagenDx",
         "}"
       ],
       "exposed" : false
@@ -416,14 +390,14 @@
   },
   "assets" : [
     {
-      "id" : "d956bae5-97c3-4580-9f57-73d9363a4eac",
+      "id" : "4d6e2f90-acc3-4de1-8a9b-0b0c72085a35",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "479fccec-6f55-47c3-abb4-cd077a74651b",
+      "id" : "ff851c1e-9772-438c-b71e-ebfdb207097a",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

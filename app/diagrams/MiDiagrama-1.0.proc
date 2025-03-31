@@ -761,6 +761,11 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_mcct9fkdEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_mcct9_kdEe-sVKVci2O3GA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_mcct9vkdEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_98n_8A3zEfCrlrojk3TH7Q" subprocessTarget="historiaClinicaCirugia" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_98n_8Q3zEfCrlrojk3TH7Q" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-1YM4A3zEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </processSource>
+          </inputMappings>
           <outputMappings xmi:type="process:OutputMapping" xmi:id="_EU4F4AgqEfCSXdAfKiQrcA" subprocessSource="vertexResponse" processTarget="_J9NnYAgqEfCSXdAfKiQrcA"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_-t5ZEQeWEfCIDsDob5_nSQ" name="Salas Cirugia" content="Salas Cirugia" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_-t5ZEgeWEfCIDsDob5_nSQ" name="1.0" content="1.0" returnTypeFixed="true"/>
@@ -802,7 +807,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_aUePgPkdEe-sVKVci2O3GA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_aUePgvkdEe-sVKVci2O3GA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_pvZjAA2CEfCrlrojk3TH7Q" name="Atender paciente" outgoing="_vZxr4A2CEfCrlrojk3TH7Q" incoming="_saxkIA2CEfCrlrojk3TH7Q _s024EA2CEfCrlrojk3TH7Q _tQV6MA2CEfCrlrojk3TH7Q _3Okd4A2CEfCrlrojk3TH7Q" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_pvZjAA2CEfCrlrojk3TH7Q" name="Atender paciente" outgoing="_vZxr4A2CEfCrlrojk3TH7Q" incoming="_saxkIA2CEfCrlrojk3TH7Q _s024EA2CEfCrlrojk3TH7Q _tQV6MA2CEfCrlrojk3TH7Q _3Okd4A2CEfCrlrojk3TH7Q _qEgi0A3vEfCrlrojk3TH7Q" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pvaKEQ2CEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pvaKEA2CEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pvaKEg2CEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
@@ -939,6 +944,11 @@
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_pvaKGw2CEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:IntermediateThrowSignalEvent" xmi:id="_oCVPsA3vEfCrlrojk3TH7Q" name="Señal1" signalCode="Urgencia" outgoing="_qEgi0A3vEfCrlrojk3TH7Q">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_oCYTAQ3vEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_oCYTAA3vEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_oCYTAg3vEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_2urmUPkdEe-sVKVci2O3GA" name="Hospitalario" actor="_4Jae8PkdEe-sVKVci2O3GA">
@@ -1158,6 +1168,10 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_3Okd4A2CEfCrlrojk3TH7Q" target="_pvZjAA2CEfCrlrojk3TH7Q" source="_fXj5cPkeEe-sVKVci2O3GA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_3Okd4Q2CEfCrlrojk3TH7Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_3Okd4g2CEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_qEgi0A3vEfCrlrojk3TH7Q" target="_pvZjAA2CEfCrlrojk3TH7Q" source="_oCVPsA3vEfCrlrojk3TH7Q">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_qEgi0Q3vEfCrlrojk3TH7Q"/>
+        <condition xmi:type="expression:Expression" xmi:id="_qEgi0g3vEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_vnxdwPkMEe-sVKVci2O3GA" name="Paciente" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_U8x2QPkWEe-sVKVci2O3GA" name="Medico"/>
@@ -1670,7 +1684,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_V9SshvkgEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_V9SsiPkgEe-sVKVci2O3GA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_V9Ssh_kgEe-sVKVci2O3GA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_X4z-AfkgEe-sVKVci2O3GA" type="URL" url="https://bonitasoftfront.netlify.app/analizarMuestras">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_X4z-AfkgEe-sVKVci2O3GA" type="URL" url="http://localhost:4200/analizarMuestras">
             <targetForm xmi:type="expression:Expression" xmi:id="_6mxuoPngEe-6NbZI5Pt9YA" name="AnalizarMuestras" content="0f1db990-9684-49b6-b58a-bf1d18e7ddd1" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_X4z-APkgEe-sVKVci2O3GA">
@@ -1779,7 +1793,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_LiZIZAWsEfCQmuVCFen8jw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_LiZIZgWsEfCQmuVCFen8jw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_LiZIZQWsEfCQmuVCFen8jw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_LiZvcAWsEfCQmuVCFen8jw" type="URL" url="https://bonitasoftfront.netlify.app/examinarMuestras">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_LiZvcAWsEfCQmuVCFen8jw" type="URL" url="http://localhost:4200/examinarMuestras">
             <targetForm xmi:type="expression:Expression" xmi:id="_S_sAYAWsEfCQmuVCFen8jw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_LiZIZwWsEfCQmuVCFen8jw">
@@ -1962,48 +1976,69 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_hDI8gQ2NEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_hDI8gA2NEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_hDI8gg2NEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_ZO2ZdQ2QEfCrlrojk3TH7Q">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ZO2Zdg2QEfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZO2Zdw2QEfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+          <operations xmi:type="expression:Operation" xmi:id="_mJYs4A32EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mJYs4Q32EfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_m5tWkA32EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ZO2ZeA2QEfCrlrojk3TH7Q" name="registrarCirugiaInput.nombreCirujano" content="registrarCirugiaInput?.nombreCirujano" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ZO2ZeQ2QEfCrlrojk3TH7Q" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mJYs4g32EfCrlrojk3TH7Q" name="dtFechaCirugia" content="dtFechaCirugia" type="TYPE_CONTRACT_INPUT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1hXjgA32EfCrlrojk3TH7Q" name="dtFechaCirugia" type="LOCALDATE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_1hXjgQ32EfCrlrojk3TH7Q"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ZO2Zeg2QEfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setNombreCirujano">
+            <operator xmi:type="expression:Operator" xmi:id="_mJYs4w32EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setFechaCirugia">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1u8sgA32EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1u8sgQ32EfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2JyOYA32EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1u8sgg32EfCrlrojk3TH7Q" name="intDocPaciente" content="intDocPaciente" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_5YMrIA32EfCrlrojk3TH7Q" name="intDocPaciente" type="INTEGER">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_5YMrIQ32EfCrlrojk3TH7Q"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1u8sgw32EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setCedulaPaciente">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_5uuUwA32EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_5uuUwQ32EfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6NxoQA32EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_5uuUwg32EfCrlrojk3TH7Q" name="strNombreCirugia" content="strNombreCirugia" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_9ECDsA32EfCrlrojk3TH7Q" name="strNombreCirugia">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_9ECDsQ32EfCrlrojk3TH7Q"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_5uuUww32EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setNombreCirugia">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_ZO2Zew2QEfCrlrojk3TH7Q">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ZO2ZfA2QEfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZO2ZfQ2QEfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+          <operations xmi:type="expression:Operation" xmi:id="_9T9WEA32EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_9T9WEQ32EfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9xhb0A32EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ZO2Zfg2QEfCrlrojk3TH7Q" name="registrarCirugiaInput.cedulaPaciente" content="registrarCirugiaInput?.cedulaPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ZO2Zfw2QEfCrlrojk3TH7Q" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_9T9WEg32EfCrlrojk3TH7Q" name="strNombreCirujano" content="strNombreCirujano" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="__9PsgA32EfCrlrojk3TH7Q" name="strNombreCirujano">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="__9PsgQ32EfCrlrojk3TH7Q"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ZO2ZgA2QEfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setCedulaPaciente">
+            <operator xmi:type="expression:Operator" xmi:id="_9T9WEw32EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setNombreCirujano">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_ZO2ZgQ2QEfCrlrojk3TH7Q">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ZO2Zgg2QEfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZO2Zgw2QEfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Atk9QA33EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Atk9QQ33EfCrlrojk3TH7Q" name="historiaClinicaCirugia" content="historiaClinicaCirugia" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_D0jVQA33EfCrlrojk3TH7Q" name="historiaClinicaCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ZO2ZhA2QEfCrlrojk3TH7Q" name="registrarCirugiaInput.nombreCirugia" content="registrarCirugiaInput?.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ZO2ZhQ2QEfCrlrojk3TH7Q" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Atk9Qg33EfCrlrojk3TH7Q" name="dtFechaCirugia" content="dtFechaCirugia" type="TYPE_CONTRACT_INPUT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Gi05YA33EfCrlrojk3TH7Q" name="dtFechaCirugia" type="LOCALDATE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_Gi05YQ33EfCrlrojk3TH7Q"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ZO2Zhg2QEfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setNombreCirugia">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_ZO2Zhw2QEfCrlrojk3TH7Q">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ZO2ZiA2QEfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZO2ZiQ2QEfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ZO2Zig2QEfCrlrojk3TH7Q" name="registrarCirugiaInput.fechaCirugia" content="registrarCirugiaInput?.fechaCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_ZO2Ziw2QEfCrlrojk3TH7Q" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ZO2ZjA2QEfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setFechaCirugia">
-              <inputTypes>java.lang.String</inputTypes>
+            <operator xmi:type="expression:Operator" xmi:id="_Atk9Qw33EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setDtFechaCirugia">
+              <inputTypes>java.time.LocalDate</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_hDI8gw2NEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -2012,14 +2047,20 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_hDI8hw2NEfCrlrojk3TH7Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_hDI8hg2NEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_hDI8iQ2NEfCrlrojk3TH7Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_au2zoA2QEfCrlrojk3TH7Q" name="frmIngresaCirugia" content="1ca32f42-bade-49cd-b1be-fd22299b38a4" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_hBaRAA33EfCrlrojk3TH7Q" name="frmIngresoCirugia" content="4f6aaf32-7f23-470a-a49c-d8c4b9866be8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_hDI8iA2NEfCrlrojk3TH7Q">
-            <inputs xmi:type="process:ContractInput" xmi:id="_ZO2ZcA2QEfCrlrojk3TH7Q" name="registrarCirugiaInput" type="COMPLEX" dataReference="registrarCirugia" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_ZO2ZcQ2QEfCrlrojk3TH7Q" name="nombreCirujano" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ZO2Zcg2QEfCrlrojk3TH7Q" name="cedulaPaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ZO2Zcw2QEfCrlrojk3TH7Q" name="nombreCirugia" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ZO2ZdA2QEfCrlrojk3TH7Q" name="fechaCirugia" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_TPYWcA31EfCrlrojk3TH7Q" name="dtFechaCirugia" type="LOCALDATE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_TPYWcQ31EfCrlrojk3TH7Q"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_f64YsA31EfCrlrojk3TH7Q" name="strNombreCirugia">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_f64YsQ31EfCrlrojk3TH7Q"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_hqIv0A31EfCrlrojk3TH7Q" name="strNombreCirujano">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_hqIv0Q31EfCrlrojk3TH7Q"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_oT_YsA31EfCrlrojk3TH7Q" name="intDocPaciente" type="INTEGER">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_oT_YsQ31EfCrlrojk3TH7Q"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_hDI8iw2NEfCrlrojk3TH7Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -2151,8 +2192,8 @@
           <connectors xmi:type="process:Connector" xmi:id="_TYRl4AglEfCSXdAfKiQrcA" name="getVertex" definitionId="rest-get" event="ON_ENTER" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_TYRl4QglEfCSXdAfKiQrcA" definitionId="rest-get" version="1.2.0" modelVersion="8">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TYRl4gglEfCSXdAfKiQrcA" key="url">
-                <expression xmi:type="expression:Expression" xmi:id="_TYRl4wglEfCSXdAfKiQrcA" name="url()" content="'https://nest-app-983813312521.us-central1.run.app/vertex/Cuidados post operatorios' + registrarCirugia.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_IKrukAlCEfC6RsjUB5aDQw" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+                <expression xmi:type="expression:Expression" xmi:id="_TYRl4wglEfCSXdAfKiQrcA" name="url()" content="'https://nest-app-983813312521.us-central1.run.app/vertex/Cuidados post operatorios ' + registrarCirugia.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nwFdkA35EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TYRl5QglEfCSXdAfKiQrcA" key="urlCookies">
@@ -2232,18 +2273,18 @@
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_TYRmFwglEfCSXdAfKiQrcA">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_TYRmGAglEfCSXdAfKiQrcA" name="vertexResponse" content="vertexResponse" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_JZvjYAgpEfCSXdAfKiQrcA" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
-              </leftOperand>
+              <leftOperand xmi:type="expression:Expression" xmi:id="_TYRmGAglEfCSXdAfKiQrcA" name="" content=""/>
               <rightOperand xmi:type="expression:Expression" xmi:id="_TYRmGQglEfCSXdAfKiQrcA" name="bodyAsString" content="bodyAsString" type="CONNECTOR_OUTPUT_TYPE">
                 <referencedElements xmi:type="definition:Output" xmi:id="_TYRmGgglEfCSXdAfKiQrcA" name="bodyAsString" type="java.lang.String"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_TYRmGwglEfCSXdAfKiQrcA" type="ASSIGNMENT"/>
             </outputs>
             <outputs xmi:type="expression:Operation" xmi:id="_TYRmHAglEfCSXdAfKiQrcA">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_TYRmHQglEfCSXdAfKiQrcA"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_TYRmHgglEfCSXdAfKiQrcA" name="bodyAsObject" content="bodyAsObject" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
-                <referencedElements xmi:type="definition:Output" xmi:id="_TYRmHwglEfCSXdAfKiQrcA" name="bodyAsObject" type="java.lang.Object"/>
+              <leftOperand xmi:type="expression:Expression" xmi:id="_TYRmHQglEfCSXdAfKiQrcA" name="vertexResponse" content="vertexResponse" type="TYPE_VARIABLE">
+                <referencedElements xmi:type="process:Data" xmi:id="_zL4LcA35EfCrlrojk3TH7Q" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_TYRmHgglEfCSXdAfKiQrcA" name="newScript()" content="return bodyAsObject.candidates[0].content.parts[0].text" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="definition:Output" xmi:id="_zL4LcQ35EfCrlrojk3TH7Q" name="bodyAsObject" type="java.lang.Object"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_TYRmIAglEfCSXdAfKiQrcA" type="ASSIGNMENT"/>
             </outputs>
@@ -2272,8 +2313,8 @@
           <connectors xmi:type="process:Connector" xmi:id="_cDwvUAglEfCSXdAfKiQrcA" name="getPostOpe" definitionId="rest-get" event="ON_FINISH" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_cDwvUQglEfCSXdAfKiQrcA" definitionId="rest-get" version="1.2.0" modelVersion="8">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_cDwvUgglEfCSXdAfKiQrcA" key="url">
-                <expression xmi:type="expression:Expression" xmi:id="_cDwvUwglEfCSXdAfKiQrcA" name="url()" content="'https://nest-app-983813312521.us-central1.run.app/vertex/Cuidados post operatorios' + registrarCirugia.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NasPoAlCEfC6RsjUB5aDQw" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+                <expression xmi:type="expression:Expression" xmi:id="_cDwvUwglEfCSXdAfKiQrcA" name="url()" content="'https://nest-app-983813312521.us-central1.run.app/vertex/Cuidados post operatorios ' + registrarCirugia.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-gQpwA35EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_cDwvVQglEfCSXdAfKiQrcA" key="urlCookies">
@@ -2353,18 +2394,18 @@
               </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="_cDwvhwglEfCSXdAfKiQrcA">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_cDwviAglEfCSXdAfKiQrcA" name="vertexResponse" content="vertexResponse" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="__KDm0AgpEfCSXdAfKiQrcA" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
-              </leftOperand>
+              <leftOperand xmi:type="expression:Expression" xmi:id="_cDwviAglEfCSXdAfKiQrcA" name="" content=""/>
               <rightOperand xmi:type="expression:Expression" xmi:id="_cDwviQglEfCSXdAfKiQrcA" name="bodyAsString" content="bodyAsString" type="CONNECTOR_OUTPUT_TYPE">
                 <referencedElements xmi:type="definition:Output" xmi:id="_cDwvigglEfCSXdAfKiQrcA" name="bodyAsString" type="java.lang.String"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_cDwviwglEfCSXdAfKiQrcA" type="ASSIGNMENT"/>
             </outputs>
             <outputs xmi:type="expression:Operation" xmi:id="_cDwvjAglEfCSXdAfKiQrcA">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_cDwvjQglEfCSXdAfKiQrcA"/>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_cDwvjgglEfCSXdAfKiQrcA" name="bodyAsObject" content="bodyAsObject" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
-                <referencedElements xmi:type="definition:Output" xmi:id="_cDwvjwglEfCSXdAfKiQrcA" name="bodyAsObject" type="java.lang.Object"/>
+              <leftOperand xmi:type="expression:Expression" xmi:id="_cDwvjQglEfCSXdAfKiQrcA" name="vertexResponse" content="vertexResponse" type="TYPE_VARIABLE">
+                <referencedElements xmi:type="process:Data" xmi:id="_-gR34A35EfCrlrojk3TH7Q" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_cDwvjgglEfCSXdAfKiQrcA" name="newScript()" content="return bodyAsObject.candidates[0].content.parts[0].text" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="definition:Output" xmi:id="_-gR34Q35EfCrlrojk3TH7Q" name="bodyAsObject" type="java.lang.Object"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_cDwvkAglEfCSXdAfKiQrcA" type="ASSIGNMENT"/>
             </outputs>
@@ -2390,6 +2431,17 @@
               <operator xmi:type="expression:Operator" xmi:id="_cDwvnwglEfCSXdAfKiQrcA" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
+          <operations xmi:type="expression:Operation" xmi:id="_0QTc4A35EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0QTc4Q35EfCrlrojk3TH7Q" name="historiaClinicaCirugia" content="historiaClinicaCirugia" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1BAhEA35EfCrlrojk3TH7Q" name="historiaClinicaCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0QTc4g35EfCrlrojk3TH7Q" name="vertexResponse" content="vertexResponse" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_3ZNHgA35EfCrlrojk3TH7Q" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0QTc4w35EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setStrTratamiento">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_FJS-swglEfCSXdAfKiQrcA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_FJS-tAglEfCSXdAfKiQrcA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_FJS-tQglEfCSXdAfKiQrcA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -2407,124 +2459,29 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_h6FPcgeWEfCIDsDob5_nSQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_h6FPcQeWEfCIDsDob5_nSQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_h6FPcweWEfCIDsDob5_nSQ" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34YAebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34YQebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34YgebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+          <operations xmi:type="expression:Operation" xmi:id="_SR-BEA33EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_SR-BEQ33EfCrlrojk3TH7Q" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SwoTAA33EfCrlrojk3TH7Q" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34YwebEfCIDsDob5_nSQ" name="registrarCirugiaInput.id" content="registrarCirugiaInput?.id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34ZAebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_SR-BEg33EfCrlrojk3TH7Q" name="strResultadoCirugia" content="strResultadoCirugia" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_UY2OAA33EfCrlrojk3TH7Q" name="strResultadoCirugia">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_UY2OAQ33EfCrlrojk3TH7Q"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34ZQebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setId">
+            <operator xmi:type="expression:Operator" xmi:id="_SR-BEw33EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setResultadoCirugia">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34ZgebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34ZwebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34aAebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
+          <operations xmi:type="expression:Operation" xmi:id="_UnAl0A33EfCrlrojk3TH7Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_UnAl0Q33EfCrlrojk3TH7Q" name="historiaClinicaCirugia" content="historiaClinicaCirugia" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_U_WNUA33EfCrlrojk3TH7Q" name="historiaClinicaCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34aQebEfCIDsDob5_nSQ" name="registrarCirugiaInput.nombreCirujano" content="registrarCirugiaInput?.nombreCirujano" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34agebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_UnAl0g33EfCrlrojk3TH7Q" name="strResultadoCirugia" content="strResultadoCirugia" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_WzxYUA33EfCrlrojk3TH7Q" name="strResultadoCirugia">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_WzxYUQ33EfCrlrojk3TH7Q"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34awebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setNombreCirujano">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34bAebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34bQebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34bgebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34bwebEfCIDsDob5_nSQ" name="registrarCirugiaInput.cedulaPaciente" content="registrarCirugiaInput?.cedulaPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34cAebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34cQebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setCedulaPaciente">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34cgebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34cwebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34dAebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34dQebEfCIDsDob5_nSQ" name="registrarCirugiaInput.nombreCirugia" content="registrarCirugiaInput?.nombreCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34dgebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34dwebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setNombreCirugia">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34eAebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34eQebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34egebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34ewebEfCIDsDob5_nSQ" name="registrarCirugiaInput.resultadoCirugia" content="registrarCirugiaInput?.resultadoCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34fAebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34fQebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setResultadoCirugia">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_H-34fgebEfCIDsDob5_nSQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_H-34fwebEfCIDsDob5_nSQ" name="registrarCirugia" content="registrarCirugia" type="TYPE_VARIABLE" returnType="com.company.model.RegistrarCirugia">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_H-34gAebEfCIDsDob5_nSQ" name="registrarCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.RegistrarCirugia"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_H-34gQebEfCIDsDob5_nSQ" name="registrarCirugiaInput.fechaCirugia" content="registrarCirugiaInput?.fechaCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_H-34ggebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_H-34gwebEfCIDsDob5_nSQ" type="JAVA_METHOD" expression="setFechaCirugia">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_E0TphQhOEfCLSa6nOFOQwg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_E0TphghOEfCLSa6nOFOQwg" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0TphwhOEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E0TpiAhOEfCLSa6nOFOQwg" name="historiaClinicaInput.strTipoDocumento" content="historiaClinicaInput?.strTipoDocumento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0TpiQhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_E0TpighOEfCLSa6nOFOQwg" type="JAVA_METHOD" expression="setStrTipoDocumento">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_E0TpiwhOEfCLSa6nOFOQwg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_E0TpjAhOEfCLSa6nOFOQwg" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0TpjQhOEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E0TpjghOEfCLSa6nOFOQwg" name="historiaClinicaInput.intNumeroDocumento" content="historiaClinicaInput?.intNumeroDocumento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0TpjwhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_E0TpkAhOEfCLSa6nOFOQwg" type="JAVA_METHOD" expression="setIntNumeroDocumento">
-              <inputTypes>java.lang.Integer</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_E0TpkQhOEfCLSa6nOFOQwg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_E0TpkghOEfCLSa6nOFOQwg" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0TpkwhOEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E0TplAhOEfCLSa6nOFOQwg" name="historiaClinicaInput.strNombreApellido" content="historiaClinicaInput?.strNombreApellido" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0TplQhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_E0TplghOEfCLSa6nOFOQwg" type="JAVA_METHOD" expression="setStrNombreApellido">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_E0TplwhOEfCLSa6nOFOQwg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_E0TpmAhOEfCLSa6nOFOQwg" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0TpmQhOEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E0TpmghOEfCLSa6nOFOQwg" name="historiaClinicaInput.dtFechaCirugia" content="historiaClinicaInput?.dtFechaCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0TpmwhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_E0TpnAhOEfCLSa6nOFOQwg" type="JAVA_METHOD" expression="setDtFechaCirugia">
-              <inputTypes>java.time.LocalDate</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_E0TpnQhOEfCLSa6nOFOQwg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_E0TpnghOEfCLSa6nOFOQwg" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_E0TpnwhOEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_E0TpoAhOEfCLSa6nOFOQwg" name="historiaClinicaInput.strResultadoCirugia" content="historiaClinicaInput?.strResultadoCirugia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_E0TpoQhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_E0TpoghOEfCLSa6nOFOQwg" type="JAVA_METHOD" expression="setStrResultadoCirugia">
+            <operator xmi:type="expression:Operator" xmi:id="_UnAl0w33EfCrlrojk3TH7Q" type="JAVA_METHOD" expression="setStrResultadoCirugia">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -2534,30 +2491,12 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_h6FPeAeWEfCIDsDob5_nSQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_h6FPdweWEfCIDsDob5_nSQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_h6FPegeWEfCIDsDob5_nSQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_I4scUAebEfCIDsDob5_nSQ" name="frmRegistrarCirugia" content="c4215de1-6f76-4815-8e54-0e898898dda5" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_OiS_cA35EfCrlrojk3TH7Q" name="frmRegistrarCirugia" content="08b7e1b1-08a5-43bb-8791-3da88ecec76d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_h6FPeQeWEfCIDsDob5_nSQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_H-3RUAebEfCIDsDob5_nSQ" name="registrarCirugiaInput" type="COMPLEX" dataReference="registrarCirugia" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RUQebEfCIDsDob5_nSQ" name="id" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RUgebEfCIDsDob5_nSQ" name="nombreCirujano" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RUwebEfCIDsDob5_nSQ" name="cedulaPaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RVAebEfCIDsDob5_nSQ" name="nombreCirugia" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RVQebEfCIDsDob5_nSQ" name="resultadoCirugia" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_H-3RVgebEfCIDsDob5_nSQ" name="fechaCirugia" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_ffQ-QA32EfCrlrojk3TH7Q" name="strResultadoCirugia">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_ffQ-QQ32EfCrlrojk3TH7Q"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_E0SbYAhOEfCLSa6nOFOQwg" name="historiaClinicaInput" type="COMPLEX" dataReference="historiaClinica" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_E0SbYQhOEfCLSa6nOFOQwg" name="strTipoDocumento" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_E0SbYghOEfCLSa6nOFOQwg" name="intNumeroDocumento" type="INTEGER" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_E0TpgAhOEfCLSa6nOFOQwg" name="strNombreApellido" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_E0TpgQhOEfCLSa6nOFOQwg" name="dtFechaCirugia" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_E0TpgghOEfCLSa6nOFOQwg" name="strResultadoCirugia" createMode="false"/>
-            </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_E0TpgwhOEfCLSa6nOFOQwg" expression="historiaClinicaInput?.strTipoDocumento != null" errorMessage="strTipoDocumento is mandatory for HistoriaClinica" name="mandatory_historiaClinicaInput_strTipoDocumento">
-              <inputNames>historiaClinicaInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_E0TphAhOEfCLSa6nOFOQwg" expression="historiaClinicaInput?.intNumeroDocumento != null" errorMessage="intNumeroDocumento is mandatory for HistoriaClinica" name="mandatory_historiaClinicaInput_intNumeroDocumento">
-              <inputNames>historiaClinicaInput</inputNames>
-            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_h6F2gQeWEfCIDsDob5_nSQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -2574,7 +2513,7 @@
       <data xmi:type="process:Data" xmi:id="_E8tXYAgpEfCSXdAfKiQrcA" name="vertexResponse" dataType="_8kqAkfkLEe-sVKVci2O3GA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_E8tXYQgpEfCSXdAfKiQrcA" content=""/>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_7OxSoAhNEfCLSa6nOFOQwg" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_7OxSoAhNEfCLSa6nOFOQwg" name="historiaClinicaCirugia" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica">
         <defaultValue xmi:type="expression:Expression" xmi:id="_7OxSoQhNEfCLSa6nOFOQwg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_sWM6_weUEfCIDsDob5_nSQ">
@@ -2698,7 +2637,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_D11FhwhCEfCLSa6nOFOQwg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_D11FhghCEfCLSa6nOFOQwg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_s2LpmQ2JEfCrlrojk3TH7Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Aye0wA3eEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_xxiw4A34EfCrlrojk3TH7Q" name="frmTomarImagenDx" content="aa66922c-3cd1-4a5b-8d19-9d8fe4db7880" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_s2LpmA2JEfCrlrojk3TH7Q">
             <inputs xmi:type="process:ContractInput" xmi:id="_w0C-8A3ZEfCrlrojk3TH7Q" name="strResultadoImagenDx">
@@ -2797,7 +2736,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_uS9iQQ3ZEfCrlrojk3TH7Q" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_6gvlcAhBEfCLSa6nOFOQwg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Aye0wQ3eEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_woracQ3vEfCrlrojk3TH7Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_6gvlcghBEfCLSa6nOFOQwg">
         <targetForm xmi:type="expression:Expression" xmi:id="_6gvlcwhBEfCLSa6nOFOQwg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2973,6 +2912,12 @@
             <children xmi:type="notation:Shape" xmi:id="_pvbYMA2CEfCrlrojk3TH7Q" type="3005" element="_pvZjAA2CEfCrlrojk3TH7Q" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_pvbYMg2CEfCrlrojk3TH7Q" type="5005"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pvbYMQ2CEfCrlrojk3TH7Q" x="788" y="58"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oCaIMA3vEfCrlrojk3TH7Q" type="3022" element="_oCVPsA3vEfCrlrojk3TH7Q" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oCaIMg3vEfCrlrojk3TH7Q" type="5037">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oCaIMw3vEfCrlrojk3TH7Q" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oCaIMQ3vEfCrlrojk3TH7Q" x="566" y="68"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_Mw3kwfkWEe-sVKVci2O3GA"/>
@@ -3850,6 +3795,15 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Al931A2TEfCrlrojk3TH7Q" points="[-1, -14, -217, -17]$[212, 3, -4, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Al_F8A2TEfCrlrojk3TH7Q" id="(1.0,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Al_F8Q2TEfCrlrojk3TH7Q" id="(0.031746031746031744,0.5238095238095238)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_qEhJ4A3vEfCrlrojk3TH7Q" type="4001" element="_qEgi0A3vEfCrlrojk3TH7Q" source="_oCaIMA3vEfCrlrojk3TH7Q" target="_pvbYMA2CEfCrlrojk3TH7Q" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_qEhw8A3vEfCrlrojk3TH7Q" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qEhw8Q3vEfCrlrojk3TH7Q" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_qEhJ4Q3vEfCrlrojk3TH7Q" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qEhJ4g3vEfCrlrojk3TH7Q" points="[-2, -8, -270, 0]$[264, -9, -4, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qEi_EA3vEfCrlrojk3TH7Q" id="(1.0,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qEi_EQ3vEfCrlrojk3TH7Q" id="(0.04,0.44)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
