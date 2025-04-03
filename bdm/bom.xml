@@ -74,6 +74,7 @@
                 <field type="STRING" length="255" name="strResultadoCirugia" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="bAsegCobertura" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="bAsegAutorizaCirugia" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bDiagnostico" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
