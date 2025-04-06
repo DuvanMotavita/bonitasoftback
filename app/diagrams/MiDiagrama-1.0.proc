@@ -360,6 +360,85 @@
               <operator xmi:type="expression:Operator" xmi:id="_GBMRfg3lEfCrlrojk3TH7Q" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
+          <connectors xmi:type="process:Connector" xmi:id="_y6KEkBJzEfC5_fD5dyUqVw" name="ingreso" definitionId="database-postgresql92" event="ON_FINISH" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_y6KEkRJzEfC5_fD5dyUqVw" definitionId="database-postgresql92" version="1.0.0" modelVersion="8">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KEkhJzEfC5_fD5dyUqVw" key="driver">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KEkxJzEfC5_fD5dyUqVw" name="org.postgresql.Driver" content="org.postgresql.Driver" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KElBJzEfC5_fD5dyUqVw" key="url">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KElRJzEfC5_fD5dyUqVw" name="jdbc:postgresql://localhost:5432/bonita_history" content="jdbc:postgresql://localhost:5432/bonita_history" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KElhJzEfC5_fD5dyUqVw" key="script">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KroBJzEfC5_fD5dyUqVw" name="query" content="INSERT INTO &quot;hisotry&quot;.&quot;IngresoPaciente&quot; (&quot;strNombreApellido&quot;,&#xA;  &quot;strEmail&quot;, &quot;intCelular&quot;, &quot;strPrestadorSalud&quot;)&#xA;  VALUES ('${historiaClinica.strNombreApellido.toString()}','${historiaClinica.strEmail.toString()}', 3112132, '${historiaClinica.strPrestadorSalud.toString()}')" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_oBJ4EfC5_fD5dyUqVw" name="historiaClinica.strNombreApellido.toString()" content="historiaClinica.strNombreApellido.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_oRJ4EfC5_fD5dyUqVw" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a0w_ohJ4EfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_oxJ4EfC5_fD5dyUqVw" name="historiaClinica.strEmail.toString()" content="historiaClinica.strEmail.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_pBJ4EfC5_fD5dyUqVw" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a0w_pRJ4EfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_phJ4EfC5_fD5dyUqVw" name="historiaClinica.strPrestadorSalud.toString()" content="historiaClinica.strPrestadorSalud.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_a0w_pxJ4EfC5_fD5dyUqVw" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a0w_qBJ4EfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KrpxJzEfC5_fD5dyUqVw" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KrqBJzEfC5_fD5dyUqVw" name="postgres" content="postgres" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KrqRJzEfC5_fD5dyUqVw" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KrqhJzEfC5_fD5dyUqVw" name="123456" content="123456" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KrqxJzEfC5_fD5dyUqVw" key="separator">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KrrBJzEfC5_fD5dyUqVw" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KrrRJzEfC5_fD5dyUqVw" key="outputType">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KrrhJzEfC5_fD5dyUqVw" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_y6KrrxJzEfC5_fD5dyUqVw" key="wizardMode">
+                <expression xmi:type="expression:Expression" xmi:id="_y6KrsBJzEfC5_fD5dyUqVw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_y6KrsRJzEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_y6KrshJzEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_y6KrsxJzEfC5_fD5dyUqVw" name="resultset" content="resultset" type="CONNECTOR_OUTPUT_TYPE" returnType="java.sql.ResultSet">
+                <referencedElements xmi:type="definition:Output" xmi:id="_y6KrtBJzEfC5_fD5dyUqVw" name="resultset" type="java.sql.ResultSet"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_y6KrtRJzEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="_y6KrthJzEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_y6KrtxJzEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_y6KruBJzEfC5_fD5dyUqVw" name="singleResult" content="singleResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
+                <referencedElements xmi:type="definition:Output" xmi:id="_y6KruRJzEfC5_fD5dyUqVw" name="singleResult" type="java.lang.Object"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_y6KruhJzEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="_y6KruxJzEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_y6KrvBJzEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_y6KrvRJzEfC5_fD5dyUqVw" name="oneRowNColResult" content="oneRowNColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+                <referencedElements xmi:type="definition:Output" xmi:id="_y6KrvhJzEfC5_fD5dyUqVw" name="oneRowNColResult" type="java.util.List"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_y6KrvxJzEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="_y6KrwBJzEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_y6KrwRJzEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_y6KrwhJzEfC5_fD5dyUqVw" name="nRowOneColResult" content="nRowOneColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+                <referencedElements xmi:type="definition:Output" xmi:id="_y6KrwxJzEfC5_fD5dyUqVw" name="nRowOneColResult" type="java.util.List"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_y6KrxBJzEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+            <outputs xmi:type="expression:Operation" xmi:id="_y6KrxRJzEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_y6KrxhJzEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_y6KrxxJzEfC5_fD5dyUqVw" name="tableResult" content="tableResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+                <referencedElements xmi:type="definition:Output" xmi:id="_y6KryBJzEfC5_fD5dyUqVw" name="tableResult" type="java.util.List"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_y6KryRJzEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="__9ZdCgzDEfCrlrojk3TH7Q">
             <leftOperand xmi:type="expression:Expression" xmi:id="__9ZdCwzDEfCrlrojk3TH7Q" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__9ZdDAzDEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
@@ -509,6 +588,57 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_RBJj0QzCEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_RBJj0AzCEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_RBJj0gzCEfCrlrojk3TH7Q" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:Data" xmi:id="_Ps-3EBJxEfC5_fD5dyUqVw" documentation="triage level" name="triage" dataType="_8kqAjvkLEe-sVKVci2O3GA">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_Ps-3ERJxEfC5_fD5dyUqVw" name="init_triage()" content="historiaClinica.intTriage" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ps-3EhJxEfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+            </defaultValue>
+          </data>
+          <connectors xmi:type="process:Connector" xmi:id="_dRWQcBJwEfC5_fD5dyUqVw" name="triage" definitionId="database-postgresql92" event="ON_FINISH" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_dRWQcRJwEfC5_fD5dyUqVw" definitionId="database-postgresql92" version="1.0.0" modelVersion="8">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3gBJwEfC5_fD5dyUqVw" key="driver">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3gRJwEfC5_fD5dyUqVw" name="org.postgresql.Driver" content="org.postgresql.Driver" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3ghJwEfC5_fD5dyUqVw" key="url">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3gxJwEfC5_fD5dyUqVw" name="jdbc:postgresql://localhost:5432/bonita_history" content="jdbc:postgresql://localhost:5432/bonita_history" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3hBJwEfC5_fD5dyUqVw" key="script">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3hRJwEfC5_fD5dyUqVw" name="query" content="INSERT INTO &quot;hisotry&quot;.&quot;triage&quot; (&quot;strMotivoConsulta&quot;, &quot;strSignosVitales&quot;,&#xA;  &quot;intEdad&quot;, &quot;intTriage&quot;)&#xA;  VALUES ('Enfermito', 'Presion 110', ${historiaClinica.intEdad}, ${historiaClinica.intTriage})" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_G4Zs8BJ6EfC5_fD5dyUqVw" name="historiaClinica.intEdad" content="historiaClinica.intEdad" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_G4Zs8RJ6EfC5_fD5dyUqVw" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_G4Zs8hJ6EfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_G4Zs8xJ6EfC5_fD5dyUqVw" name="historiaClinica.intTriage" content="historiaClinica.intTriage" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_G4Zs9BJ6EfC5_fD5dyUqVw" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_G4Zs9RJ6EfC5_fD5dyUqVw" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3hhJwEfC5_fD5dyUqVw" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3hxJwEfC5_fD5dyUqVw" name="postgres" content="postgres" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3iBJwEfC5_fD5dyUqVw" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3iRJwEfC5_fD5dyUqVw" name="123456" content="123456" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3ihJwEfC5_fD5dyUqVw" key="separator">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3ixJwEfC5_fD5dyUqVw" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3jBJwEfC5_fD5dyUqVw" key="outputType">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3jRJwEfC5_fD5dyUqVw" name="outputType" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dRW3jhJwEfC5_fD5dyUqVw" key="wizardMode">
+                <expression xmi:type="expression:Expression" xmi:id="_dRW3jxJwEfC5_fD5dyUqVw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_dRW3kBJwEfC5_fD5dyUqVw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_dRW3kRJwEfC5_fD5dyUqVw"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_dRW3khJwEfC5_fD5dyUqVw" name="resultset" content="resultset" type="CONNECTOR_OUTPUT_TYPE" returnType="java.sql.ResultSet">
+                <referencedElements xmi:type="definition:Output" xmi:id="_dRW3kxJwEfC5_fD5dyUqVw" name="resultset" type="java.sql.ResultSet"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_dRW3lBJwEfC5_fD5dyUqVw" type="ASSIGNMENT"/>
+            </outputs>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_dHOk1QzCEfCrlrojk3TH7Q">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dHOk1gzCEfCrlrojk3TH7Q" name="historiaClinica" content="historiaClinica" type="TYPE_VARIABLE" returnType="com.company.model.HistoriaClinica">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dHOk1wzCEfCrlrojk3TH7Q" name="historiaClinica" dataType="_8kqAlPkLEe-sVKVci2O3GA" className="com.company.model.HistoriaClinica"/>
@@ -3203,7 +3333,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_uS9iQQ3ZEfCrlrojk3TH7Q" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_6gvlcAhBEfCLSa6nOFOQwg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ANsxYBF7EfCSPay4XAylzg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_pu41kBJ4EfC5_fD5dyUqVw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_6gvlcghBEfCLSa6nOFOQwg">
         <targetForm xmi:type="expression:Expression" xmi:id="_6gvlcwhBEfCLSa6nOFOQwg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
