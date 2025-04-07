@@ -215,7 +215,9 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_GBMRKw3lEfCrlrojk3TH7Q">
                   <expressions xmi:type="expression:ListExpression" xmi:id="_GBMRLA3lEfCrlrojk3TH7Q">
                     <expressions xmi:type="expression:Expression" xmi:id="_GBMRLQ3lEfCrlrojk3TH7Q" name="Authorization" content="Authorization"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_GBMRLg3lEfCrlrojk3TH7Q" name="Bearer 00Daj00000Oj1zp!AQEAQBu46KN.JMg70JE6kF.vNpwKgWGpnRSsbNCO2ccQxOCWbTCSCdPc5OgIvnI7Qxu8ChB4IMnphhPY5KM4zzU1wQm._rFC" content="Bearer 00Daj00000Oj1zp!AQEAQBu46KN.JMg70JE6kF.vNpwKgWGpnRSsbNCO2ccQxOCWbTCSCdPc5OgIvnI7Qxu8ChB4IMnphhPY5KM4zzU1wQm._rFC"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_GBMRLg3lEfCrlrojk3TH7Q" name="newScript()" content="'Bearer'+tokenSalesForce" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                      <referencedElements xmi:type="process:Data" xmi:id="_ErDRcBNzEfCNGNzUCmI1Iw" name="tokenSalesForce" dataType="_8kqAkfkLEe-sVKVci2O3GA"/>
+                    </expressions>
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_GBMRLw3lEfCrlrojk3TH7Q">
                     <expressions xmi:type="expression:Expression" xmi:id="_GBMRMA3lEfCrlrojk3TH7Q" name="Content-Type" content="Content-Type"/>
